@@ -1,0 +1,440 @@
+//<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>RobotX-order</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body link="#ffffff" alink="dodgerblue" vlink="#ffffff">
+
+<div id = "links"> <H2>
+
+<a href="http://web.ics.purdue.edu/~g1040994/">Home</a> |
+
+<a href="http://web.ics.purdue.edu/~g1040994/order">Order Now</a><br> </H2>
+
+</div>
+<br><br>
+
+<div id= "Maincontent">
+<h1 style="color:dodgerblue"> <u>Robot Customizability</u></h1>
+
+
+What kind of material would you like the robot to be made of?<br>
+
+
+<form action="index.php" method="post">
+<table width="506" height="268" border=0>
+
+<tr>
+
+ <td width="145">
+ <input type="radio" name="Material" onclick="myFunction(this.value)" value="Silicon">Silicon [$600]</td>
+
+	<td width="351"><img src="Silicon.jpg" width="100" height="50" stype="width:450px"></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+ <input type="radio" name="Material" onclick="myFunction(this.value)" value="Rubber">Rubber [$325]<br>
+
+</td>
+
+<td>
+
+<img src="Rubber.jpg" width="100" height="50" stype="width:450px">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+ <input type="radio" name="Material" onclick="myFunction(this.value)" value="Graphene">Graphene [$1500]<br>
+
+ </td>
+
+ <td>
+
+ <img src="Graphine.jpg" width="100" height="50" stype="width:450px">
+
+ </td>
+
+ </tr>
+
+ <tr>
+
+ <td>
+
+ <input type="radio" name="Material" onclick="myFunction(this.value)" value="Plastic">Plastic [$250]<br><br>
+
+ </td>
+
+ <td>
+
+ <img src="Plastic.jpg" width="100" height="50" stype="width:450px">
+
+ </td>
+
+ </tr>
+
+</table>
+
+
+
+
+<script>
+function myFunction(Material) {
+	document.getElementById("Material").value = Material;
+}
+</script>
+
+
+
+ <br><h2><u>Physical Structure</u></h2>
+
+ <b>Head Display:<br></b>
+
+ <table width="506" height="186" border=0>
+
+ <tr>
+
+ <td width="142" height="81">
+
+ <input type="radio" name="Head" onclick="myFunction(this.value)" value="Kronos">Kronos [$400]<br>
+
+ </td>
+
+ <td width="354">
+
+ <img src="Screen.jpg" width="100" height="65" stype="width:450px">
+
+ </td>
+
+ </tr>
+
+ <tr>
+
+ <td height="99">
+
+ <input type="radio" name="Head" onclick="myFunction(this.value)" value="Venus">Venus [$465]<br>
+
+ </td>
+
+ <td>
+
+ <img src="Face.jpg" width="100" height="" stype="width:450px">
+
+ </td>
+
+ </tr>
+
+ <tr>
+
+ <td height="99">
+
+ <input type="radio" name="Head" onclick="myFunction(this.value)" value="Helio">Helio [$500]<br>
+
+ </td>
+
+ <td>
+
+ <img src="Robothead.jpg" width="100" height="" stype="width:450px">
+
+ </td>
+
+ </tr>
+
+ </table>
+
+
+
+
+
+<script>
+function myFunction(Head) {
+	document.getElementById("Head").value = Head;
+}
+</script>
+
+
+ <b>Arms:<br></b>
+
+ <input type="radio" name="Arms" onclick="myFunction(this.value)" value="Armstubed">Tubed [$1200]<br>
+
+<input type="radio" name="Arms" onclick="myFunction(this.value)" value="Armsslender">Slender [$1250]<br>
+
+<input type="radio" name="Arms" onclick="myFunction(this.value)" value="Armsflex">Flex-joint [$1350]<br>
+
+<input type="radio" name="Arms" onclick="myFunction(this.value)" value="Armsextend">Extender [$1550]<br>
+
+
+<script>
+function myFunction(Arms) {
+	document.getElementById("Arms").value = Arms;
+}
+</script>
+
+<b><br>Body:<br></b>
+
+<input type="radio" name="Body" onclick="myFunction(this.value)" value="Bodyboxed">Boxed [$1700]<br>
+
+<input type="radio" name="Body" onclick="myFunction(this.value)" value="Bodyrounded">Rounded [$1600]<br>
+
+<input type="radio" name="Body" onclick="myFunction(this.value)" value="Bodyslender">Slender [$1400]<br><br>
+
+
+<script>
+function myFunction(Body) {
+	document.getElementById("Body").value = Body;
+}
+</script>
+
+
+<b>Legs:<br></b>
+
+<input type="radio" name="Legs" onclick="myFunction(this.value)" value="LegsTube">Tubed<br>
+
+<input type="radio" name="Legs" onclick="myFunction(this.value)" value="Legsslender">Slender<br>
+
+<input type="radio" name="Legs" onclick="myFunction(this.value)" value="Legsflex">Flex-Joint<br>
+
+<input type="radio" name="Legs" onclick="myFunction(this.value)" value="Legsextend">Extender<br><br>
+
+
+<script>
+function myFunction(Legs) {
+	document.getElementById("Legs").value = Legs;
+}
+</script>
+
+
+<b>Sensors:<br></b>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="xray">X-Ray Vision [$350]<br>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="Infrared">Infra-red [$350] <br>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="tactile">Super-tactile [$550]<br>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="super1">Super-hearing I [$625] <br>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="super2">Super-hearing II [$650]<br>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="taste">Taste inference [$200]<br>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="health">Health Monitors [$1300]<br>
+
+<input type="radio" name="Sensors" onclick="myFunction(this.value)" value="cooking">Cooking Monitors [$750]<br><br>
+
+
+<script>
+function myFunction(Sensors) {
+	document.getElementById("Sensors").value = Sensors;
+}
+</script>
+
+<b>Add-Ons:</b><br>
+
+<input type="radio" name="Addon" onclick="myFunction(this.value)" value="cooking">Cooking Utility Set [$650]<br>
+
+<input type="radio" name="Addon" onclick="myFunction(this.value)" value="fireman">Fireman Utility Set [$2100] <br>
+
+<input type="radio" name="Addon" onclick="myFunction(this.value)" value="cleaning">Cleaning Utility Set [$250]<br>
+
+<input type="radio" name="Addon" onclick="myFunction(this.value)" value="comm">Human-Communication Utility Set [$150] <br>
+
+<input type="radio" name="Addon" onclick="myFunction(this.value)" value="fix">Fix-it Utility Set [$800]<br>
+
+<script>
+function myFunction(Addon) {
+	document.getElementById("Addon").value = Addon;
+}
+</script>
+
+
+<b><br>Processor: <br></b>
+
+<input type="radio" name="Processor" onclick="myFunction(this.value)" value="speed1">Positron-i8000 [$3250]<br>
+
+<input type="radio" name="Processor" onclick="myFunction(this.value)" value="speed2">Positron-i8200 [$3500]<br>
+
+<input type="radio" name="Processor" onclick="myFunction(this.value)" value="speed3">Positron-i8600 [$3750]<br>
+
+<input type="radio" name="Processor" onclick="myFunction(this.value)" value="speed4">Positron-Xtreme7 [$5000]<br><br>
+
+<script>
+function myFunction(Processor) {
+	document.getElementById("Processor").value = Processor;
+}
+</script>
+
+<!--
+<section>
+
+<h1>Robot Preview</h1>
+
+<br><br><br>
+
+<h3>Price: $</h3></section>
+-->
+
+
+<h1 style="color:dodgerblue"> <u>Customer Information</u></h1><table width="506" height="268" border=0>
+  <tr>
+   	 <td width="255"><strong>Name *</strong></td>
+  </tr>
+  <tr>
+   	 <td>First: </td>
+   	 <td width="224">Last: </td>
+  </tr>
+  <tr>
+  		 <td><input type="text" name="FirstName"></td>
+	<td><input type="text" name="LastName"></td>
+  </tr>
+  <tr>
+	<td><br>
+  	<strong>E-mail: * </strong></td>
+  </tr>
+  <tr>
+	<td><input type="text" name="email"></td>
+	</tr>
+  <tr>
+	<td><br>
+  	<strong>Address: *</strong><br>
+  	Street: &nbsp;&nbsp;
+  	<input type="text" name="street" size="20"></td>
+  </tr>
+  <tr>
+	<td>City: &nbsp; &nbsp; &nbsp;
+  	<input type="text" name="city" size="20"></td>
+	<td>State:
+  	<input type="text" name="state" size= "10">
+  	&nbsp; Zip:
+
+  	<input type= "text" name="zip" size = "5"></td>
+
+  </tr>
+
+  <tr>
+
+	<td> Country:
+
+  	<input type="text" name="country" size="20"></td>
+
+  </tr>
+
+</table>
+<!--
+<h1 style="color:dodgerblue"> <u> Payment Information </u></h1>
+
+<strong>Information to be entered on next page:</strong><br>
+
+<input type="radio" name="pay" value="credit">Credit Card<br>
+
+<input type="radio" name="pay" value="check">Check<br>
+
+<input type="radio" name="pay" value="money">Money Order<br>
+
+<br>
+-->
+
+
+<h3>Billing Address:</h3>
+<!--
+ <input type="checkbox" name="billing" value="bill"> Same as shipping address<br><br>
+-->
+
+
+<table width="506" height="268" border=0>
+
+  <tr>
+
+	<td width="255"><strong>Name *</strong></td>
+
+  </tr>
+
+  <tr>
+
+	<td>First: </td>
+
+	<td width="224">Last: </td>
+
+  </tr>
+
+  <tr>
+
+	<td><input type="text" name="BillFirstName"></td>
+
+	<td><input type="text" name="BillLastName"></td>
+
+  </tr>
+
+  <tr>
+
+	<td><br>
+
+  	<strong>E-mail: * </strong></td>
+
+  </tr>
+
+  <tr>
+
+	<td><input type="text" name="BillEmail"></td>
+
+	</tr>
+
+  <tr>
+
+	<td><br>
+
+  	<strong>Address: *</strong><br>
+
+  	Street: &nbsp;&nbsp;
+
+  	<input type="text" name="BillStreet" size="25"></td>
+
+  </tr>
+
+  <tr>
+
+	<td>City: &nbsp; &nbsp; &nbsp;
+
+  	<input type="text" name="BillCity" size="25"></td>
+
+	<td>State:
+
+  	<input type="text" name="BillState" size= "5">
+
+  	&nbsp; Zip:
+
+  	<input type= "text" name="BillZip" size = "10"></td>
+
+  </tr>
+
+  <tr>
+
+	<td> Country:
+
+  	<input type="text" name="BillCountry" size="25"></td>
+
+  </tr>
+
+</table>
+
+
+<input type="submit" />
+</div>
+
+</body>
+
+
+
+</html>
+
+
