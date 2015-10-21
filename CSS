@@ -1,0 +1,16 @@
+/* CSS Document */
+#links{
+ background-color: #d0e4fe;
+}
+#wrapper{
+ overflow: hidden;
+}
+#sideBar {
+ float: left;
+ width: 150px;
+ background-color:#FFFCB1
+}
+#mainContent {
+ overflow: hidden;
+ width: 750px;
+}
